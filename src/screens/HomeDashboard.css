@@ -1,0 +1,7 @@
+.thryv-fri-circle {
+  cursor: pointer;
+}
+.thryv-fri-circle:hover {
+  background: var(--thryv-color-clay-500) !important;
+  border: 1px solid #ffffff !important;
+}

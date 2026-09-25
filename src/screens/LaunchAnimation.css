@@ -1,0 +1,25 @@
+.launch-line1 {
+  font-size: 36px !important;
+  font-weight: 400 !important;
+  color: #ffffff !important;
+  display: block;
+  text-align: center;
+}
+.launch-line2 {
+  font-size: 29px !important;
+  font-weight: 400 !important;
+  color: #ffffff !important;
+  display: block;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .launch-line1 {
+    font-size: 30px !important;
+  }
+  .launch-line2 {
+    font-size: 24px !important;
+  }
+  .launch-logo {
+    width: 260px !important;
+  }
+}

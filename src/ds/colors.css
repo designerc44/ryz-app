@@ -1,0 +1,158 @@
+/* Thryv warm-earth palette. Adapted from figma/sds's variable architecture
+   (primitive scale -> semantic aliases) but recolored: the achromatic
+   "brand" ramp is replaced with Clay (terracotta), Sand (warm neutral),
+   Moss (sage green) and Ochre (mustard gold) — all warm, low-saturation
+   earth tones instead of SDS's default black/white/gray. */
+:root {
+  /* Clay — primary brand (terracotta) */
+  --thryv-color-clay-50: #fbf3ec;
+  --thryv-color-clay-100: #f6e4d5;
+  --thryv-color-clay-200: #eacaaf;
+  --thryv-color-clay-300: #dba97d;
+  --thryv-color-clay-400: #c8834f;
+  --thryv-color-clay-500: #b5642f;
+  --thryv-color-clay-600: #965024;
+  --thryv-color-clay-700: #7a3f1c;
+  --thryv-color-clay-800: #5c3015;
+  --thryv-color-clay-900: #3e2110;
+
+  /* Sand — warm neutrals (replaces cool gray) */
+  --thryv-color-sand-50: #fbf8f3;
+  --thryv-color-sand-100: #f3ede3;
+  --thryv-color-sand-200: #e7ddcc;
+  --thryv-color-sand-300: #d6c7ac;
+  --thryv-color-sand-400: #b9a688;
+  --thryv-color-sand-500: #9a876b;
+  --thryv-color-sand-600: #7c6b54;
+  --thryv-color-sand-700: #605241;
+  --thryv-color-sand-800: #453a2e;
+  --thryv-color-sand-900: #2b2318;
+
+  /* Moss — sage green (positive / growth) */
+  --thryv-color-moss-50: #f3f5ec;
+  --thryv-color-moss-100: #e4ead3;
+  --thryv-color-moss-200: #cbd8aa;
+  --thryv-color-moss-300: #aec17d;
+  --thryv-color-moss-400: #8fa85a;
+  --thryv-color-moss-500: #718c3e;
+  --thryv-color-moss-600: #5b7130;
+  --thryv-color-moss-700: #475825;
+  --thryv-color-moss-800: #34401b;
+  --thryv-color-moss-900: #232b12;
+
+  /* Ochre — mustard gold (warning / energy accent) */
+  --thryv-color-ochre-50: #fbf3e1;
+  --thryv-color-ochre-100: #f6e2b4;
+  --thryv-color-ochre-200: #efcb7c;
+  --thryv-color-ochre-300: #e4af48;
+  --thryv-color-ochre-400: #ce9330;
+  --thryv-color-ochre-500: #ad7726;
+  --thryv-color-ochre-600: #8b5f1f;
+  --thryv-color-ochre-700: #6b4818;
+  --thryv-color-ochre-800: #4b3211;
+  --thryv-color-ochre-900: #2e1e09;
+
+  /* Rust — brick red (danger) */
+  --thryv-color-rust-50: #fbebe6;
+  --thryv-color-rust-100: #f3cfc3;
+  --thryv-color-rust-200: #e6a793;
+  --thryv-color-rust-300: #d67d60;
+  --thryv-color-rust-400: #c05b3a;
+  --thryv-color-rust-500: #a1432a;
+  --thryv-color-rust-600: #82351f;
+  --thryv-color-rust-700: #642817;
+  --thryv-color-rust-800: #481b10;
+  --thryv-color-rust-900: #2d0f08;
+
+  /* Ink / Cream — alpha overlays (black/white analogs, warm-tinted) */
+  --thryv-color-ink-100: #2b23180d;
+  --thryv-color-ink-200: #2b23181a;
+  --thryv-color-ink-300: #2b231833;
+  --thryv-color-ink-400: #2b231866;
+  --thryv-color-ink-500: #2b2318b2;
+  --thryv-color-ink-600: #2b2318cc;
+  --thryv-color-ink-700: #2b2318d9;
+  --thryv-color-ink-800: #2b2318e5;
+  --thryv-color-ink-900: #2b2318f2;
+  --thryv-color-ink-1000: #2b2318;
+  --thryv-color-cream-1000: #ffffff;
+
+  /* Semantic aliases — surfaces, text, icon, border */
+  --thryv-color-background-page: var(--thryv-color-sand-50);
+  --thryv-color-background-default-default: var(--thryv-color-cream-1000);
+  --thryv-color-background-default-default-hover: var(--thryv-color-sand-100);
+  --thryv-color-background-default-secondary: var(--thryv-color-sand-100);
+  --thryv-color-background-default-secondary-hover: var(--thryv-color-sand-200);
+  --thryv-color-background-default-tertiary: var(--thryv-color-sand-200);
+  --thryv-color-background-default-tertiary-hover: var(--thryv-color-sand-300);
+
+  --thryv-color-background-brand-default: var(--thryv-color-clay-500);
+  --thryv-color-background-brand-hover: var(--thryv-color-clay-600);
+  --thryv-color-background-brand-secondary: var(--thryv-color-clay-100);
+  --thryv-color-background-brand-secondary-hover: var(--thryv-color-clay-200);
+  --thryv-color-background-brand-tertiary: var(--thryv-color-clay-50);
+  --thryv-color-background-brand-tertiary-hover: var(--thryv-color-clay-100);
+
+  --thryv-color-background-neutral-default: var(--thryv-color-sand-600);
+  --thryv-color-background-neutral-hover: var(--thryv-color-sand-700);
+  --thryv-color-background-neutral-secondary: var(--thryv-color-sand-300);
+  --thryv-color-background-neutral-secondary-hover: var(--thryv-color-sand-400);
+
+  --thryv-color-background-positive-default: var(--thryv-color-moss-500);
+  --thryv-color-background-positive-hover: var(--thryv-color-moss-600);
+  --thryv-color-background-positive-secondary: var(--thryv-color-moss-100);
+  --thryv-color-background-positive-secondary-hover: var(--thryv-color-moss-200);
+  --thryv-color-background-positive-tertiary: var(--thryv-color-moss-50);
+
+  --thryv-color-background-warning-default: var(--thryv-color-ochre-400);
+  --thryv-color-background-warning-hover: var(--thryv-color-ochre-500);
+  --thryv-color-background-warning-secondary: var(--thryv-color-ochre-100);
+  --thryv-color-background-warning-secondary-hover: var(--thryv-color-ochre-200);
+  --thryv-color-background-warning-tertiary: var(--thryv-color-ochre-50);
+
+  --thryv-color-background-danger-default: var(--thryv-color-rust-500);
+  --thryv-color-background-danger-hover: var(--thryv-color-rust-600);
+  --thryv-color-background-danger-secondary: var(--thryv-color-rust-100);
+  --thryv-color-background-danger-secondary-hover: var(--thryv-color-rust-200);
+  --thryv-color-background-danger-tertiary: var(--thryv-color-rust-50);
+
+  --thryv-color-background-disabled-default: var(--thryv-color-sand-200);
+  --thryv-color-background-utilities-scrim: #2b2318cc;
+  --thryv-color-background-utilities-overlay: #2b231880;
+
+  --thryv-color-text-default-default: var(--thryv-color-sand-900);
+  --thryv-color-text-default-secondary: var(--thryv-color-sand-600);
+  --thryv-color-text-default-tertiary: var(--thryv-color-sand-500);
+  --thryv-color-text-brand-default: var(--thryv-color-clay-600);
+  --thryv-color-text-brand-secondary: var(--thryv-color-clay-500);
+  --thryv-color-text-brand-on-brand: var(--thryv-color-cream-1000);
+  --thryv-color-text-brand-on-brand-secondary: var(--thryv-color-clay-800);
+  --thryv-color-text-brand-on-brand-tertiary: var(--thryv-color-clay-700);
+  --thryv-color-text-positive-default: var(--thryv-color-moss-700);
+  --thryv-color-text-positive-on-positive: var(--thryv-color-cream-1000);
+  --thryv-color-text-warning-default: var(--thryv-color-ochre-700);
+  --thryv-color-text-warning-on-warning: var(--thryv-color-ochre-900);
+  --thryv-color-text-danger-default: var(--thryv-color-rust-600);
+  --thryv-color-text-danger-on-danger: var(--thryv-color-cream-1000);
+  --thryv-color-text-disabled-default: var(--thryv-color-sand-400);
+
+  --thryv-color-border-default-default: var(--thryv-color-sand-300);
+  --thryv-color-border-default-secondary: var(--thryv-color-sand-500);
+  --thryv-color-border-brand-default: var(--thryv-color-clay-500);
+  --thryv-color-border-brand-secondary: var(--thryv-color-clay-400);
+  --thryv-color-border-danger-default: var(--thryv-color-rust-500);
+  --thryv-color-border-warning-default: var(--thryv-color-ochre-500);
+  --thryv-color-border-positive-default: var(--thryv-color-moss-500);
+  --thryv-color-border-disabled-default: var(--thryv-color-sand-300);
+
+  --thryv-color-icon-default-default: var(--thryv-color-sand-800);
+  --thryv-color-icon-default-secondary: var(--thryv-color-sand-500);
+  --thryv-color-icon-brand-default: var(--thryv-color-clay-600);
+  --thryv-color-icon-brand-on-brand: var(--thryv-color-cream-1000);
+  --thryv-color-icon-disabled-default: var(--thryv-color-sand-400);
+  --thryv-color-icon-positive-default: var(--thryv-color-moss-700);
+  --thryv-color-icon-warning-default: var(--thryv-color-ochre-700);
+  --thryv-color-icon-danger-default: var(--thryv-color-rust-600);
+
+  --thryv-global-focus-ring-color: var(--thryv-color-clay-500);
+}

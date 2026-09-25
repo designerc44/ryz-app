@@ -1,0 +1,52 @@
+/* Thryv typography. Warm, calm, humanist pairing:
+   Lora (serif) for display/headings — soulful, editorial, not clinical.
+   Nunito Sans for body/UI — rounded, friendly, highly legible at small sizes.
+   Self-hosted (see fonts.css) rather than loaded from Google Fonts. */
+@import url("./fonts.css");
+
+:root {
+  --thryv-font-serif: "Lora", serif;
+  --thryv-font-sans: "Nunito Sans", sans-serif;
+
+  --thryv-scale-01: 0.75rem;
+  --thryv-scale-02: 0.875rem;
+  --thryv-scale-03: 1rem;
+  --thryv-scale-04: 1.25rem;
+  --thryv-scale-05: 1.5rem;
+  --thryv-scale-06: 2rem;
+  --thryv-scale-07: 2.5rem;
+  --thryv-scale-08: 3rem;
+  --thryv-scale-09: 4rem;
+  --thryv-scale-10: 4.5rem;
+
+  --thryv-weight-regular: 400;
+  --thryv-weight-medium: 500;
+  --thryv-weight-semibold: 600;
+  --thryv-weight-bold: 700;
+
+  --thryv-font-title-hero: normal var(--thryv-weight-bold) var(--thryv-scale-10) var(--thryv-font-serif);
+  --thryv-font-title-page: normal var(--thryv-weight-semibold) var(--thryv-scale-08) var(--thryv-font-serif);
+  --thryv-font-subtitle: normal var(--thryv-weight-regular) var(--thryv-scale-06) var(--thryv-font-serif);
+  --thryv-font-heading: normal var(--thryv-weight-semibold) var(--thryv-scale-05) var(--thryv-font-sans);
+  --thryv-font-subheading: normal var(--thryv-weight-medium) var(--thryv-scale-04) var(--thryv-font-sans);
+  --thryv-font-body-base: normal var(--thryv-weight-regular) var(--thryv-scale-03) var(--thryv-font-sans);
+  --thryv-font-body-strong: normal var(--thryv-weight-semibold) var(--thryv-scale-03) var(--thryv-font-sans);
+  --thryv-font-body-emphasis: italic var(--thryv-weight-regular) var(--thryv-scale-03) var(--thryv-font-sans);
+  --thryv-font-body-small: normal var(--thryv-weight-regular) var(--thryv-scale-02) var(--thryv-font-sans);
+  --thryv-font-body-small-strong: normal var(--thryv-weight-semibold) var(--thryv-scale-02) var(--thryv-font-sans);
+  --thryv-font-caption: normal var(--thryv-weight-medium) var(--thryv-scale-01) var(--thryv-font-sans);
+}
+
+/* Below this width the source screens shrink the larger display/heading
+   scale steps so text fits a real phone; above it they use the bigger
+   desktop-scale values as authored. Identical across every .dc.html screen. */
+@media (max-width: 480px) {
+  :root {
+    --thryv-scale-10: 2.5rem;
+    --thryv-scale-08: 2rem;
+    --thryv-scale-07: 1.75rem;
+    --thryv-scale-06: 1.4rem;
+    --thryv-scale-05: 1.15rem;
+    --thryv-scale-04: 1.05rem;
+  }
+}

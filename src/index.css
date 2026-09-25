@@ -1,0 +1,153 @@
+@import "./ds/colors.css";
+@import "./ds/typography.css";
+@import "./ds/spacing.css";
+@import "./ds/base.css";
+
+:root {
+  color-scheme: light;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 900ms;
+  animation-timing-function: ease;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Shared utility classes used across screens (ported from repeated
+   inline <style> blocks in the original .dc.html prototypes). */
+.thryv-btn-full {
+  width: 100% !important;
+}
+.thryv-on-clay {
+  color: var(--thryv-color-cream-1000) !important;
+}
+.thryv-on-clay-soft {
+  color: var(--thryv-color-clay-100) !important;
+}
+.thryv-btn-invert:not(:disabled) {
+  background: var(--thryv-color-clay-700) !important;
+  border-color: var(--thryv-color-clay-700) !important;
+  color: #ffffff !important;
+}
+.thryv-btn-invert:not(:disabled) * {
+  color: #ffffff !important;
+}
+.thryv-btn-invert:disabled {
+  background: transparent !important;
+  border-color: #ffffff !important;
+  box-shadow: inset 0 0 0 1px #ffffff !important;
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+.thryv-btn-invert:disabled * {
+  color: #ffffff !important;
+}
+
+.thryv-app-bg {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(180deg, var(--thryv-color-clay-600), var(--thryv-color-clay-500));
+  display: flex;
+  justify-content: center;
+}
+.thryv-app-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("./assets/app-background-2.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 0;
+}
+.thryv-screen {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 480px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.thryv-shell {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #965024;
+}
+.thryv-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("./assets/app-background-2.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 0;
+}
+.thryv-shell-inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 560px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+.thryv-shell-scroll {
+  flex: 1;
+  padding: 0 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: relative;
+  overflow-y: auto;
+  min-height: 0;
+}
+.thryv-shell-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  margin: 0 -20px 12px;
+}
+.thryv-text-cream {
+  color: var(--thryv-color-cream-1000) !important;
+}
+.thryv-icon-white {
+  color: #ffffff !important;
+}
+
+.thryv-label-on-clay .thryv-label {
+  color: #ffffff !important;
+}
+.thryv-link-white {
+  color: #ffffff !important;
+}
+.thryv-edit-coach-fields .thryv-input {
+  background: transparent !important;
+  color: #ffffff !important;
+  box-shadow: inset 0 0 0 1px #ffffff !important;
+}
+.thryv-edit-coach-fields .thryv-input::placeholder {
+  color: var(--thryv-color-background-disabled-default) !important;
+}
+.thryv-edit-coach-fields .thryv-input:not(:placeholder-shown) {
+  background: #ffffff !important;
+  color: var(--thryv-color-text-brand-default) !important;
+  box-shadow: inset 0 0 0 1px var(--thryv-color-border-default-default) !important;
+}

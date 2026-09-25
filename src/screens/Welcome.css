@@ -1,0 +1,8 @@
+@media (min-width: 481px) {
+  .welcome-logo {
+    margin-top: 20px;
+  }
+  .welcome-content {
+    margin-top: -10px;
+  }
+}

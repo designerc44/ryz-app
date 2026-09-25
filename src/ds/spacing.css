@@ -1,0 +1,34 @@
+/* Spacing, radius, stroke and shadow scale — same numeric ramp as figma/sds
+   (4px grid, rem-based) renamed to the Thryv namespace. Radii are kept
+   generous/soft (never sharp corners) to read as calm and organic. */
+:root {
+  --thryv-space-0: 0rem;
+  --thryv-space-050: 0.125rem;
+  --thryv-space-100: 0.25rem;
+  --thryv-space-150: 0.375rem;
+  --thryv-space-200: 0.5rem;
+  --thryv-space-300: 0.75rem;
+  --thryv-space-400: 1rem;
+  --thryv-space-600: 1.5rem;
+  --thryv-space-800: 2rem;
+  --thryv-space-1200: 3rem;
+  --thryv-space-1600: 4rem;
+  --thryv-space-2400: 6rem;
+
+  --thryv-radius-100: 0.5rem;
+  --thryv-radius-200: 0.875rem;
+  --thryv-radius-400: 1.5rem;
+  --thryv-radius-full: 624.9375rem;
+
+  --thryv-stroke-border: 0.0625rem;
+  --thryv-stroke-focus-ring: 0.125rem;
+
+  --thryv-shadow-100: 0 1px 3px 0 var(--thryv-color-ink-200);
+  --thryv-shadow-200: 0 2px 8px -2px var(--thryv-color-ink-300);
+  --thryv-shadow-300: 0 8px 24px -4px var(--thryv-color-ink-300);
+  --thryv-shadow-inner-100: inset 0 1px 3px 0 var(--thryv-color-ink-200);
+
+  --thryv-ease-standard: cubic-bezier(0.3, 0, 0.2, 1); /* @kind other */
+  --thryv-duration-fast: 120ms; /* @kind other */
+  --thryv-duration-base: 200ms; /* @kind other */
+}

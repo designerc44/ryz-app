@@ -1,0 +1,23 @@
+.thryv-bottomnav-bg {
+  width: 100%;
+  background: #211403;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+.thryv-bottomnav-bg .thryv-nav-tabbar {
+  background: transparent !important;
+  border-top: none !important;
+  width: 100% !important;
+  max-width: 560px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.thryv-bottomnav-bg .thryv-nav-tabbar-item {
+  color: #ffffff !important;
+}
+.thryv-bottomnav-bg .thryv-nav-tabbar-item .thryv-icon {
+  color: #ffffff !important;
+}

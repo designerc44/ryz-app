@@ -1,0 +1,117 @@
+.thryv-ah-wrap {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 40;
+  width: 100%;
+  background: #c79545;
+  border-bottom: 1px solid #ffffff;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.thryv-ah-inner {
+  width: 100%;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  box-sizing: border-box;
+  position: relative;
+}
+.thryv-ah-center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.thryv-ah-on-clay {
+  color: #ffffff !important;
+}
+.thryv-ah-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.thryv-ah-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  flex-shrink: 0;
+}
+.thryv-ah-fav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--thryv-color-background-default-default);
+  border-radius: var(--thryv-radius-full);
+  padding: 8px 14px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.thryv-ah-burger {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+.thryv-ah-burger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 1px;
+}
+.thryv-ah-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+  padding: 8px;
+  width: 240px;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+.thryv-ah-item {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: var(--thryv-color-ink-900);
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+.thryv-ah-item:hover {
+  background: var(--thryv-color-sand-100);
+}
+.thryv-ah-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 25;
+  background: transparent;
+}
