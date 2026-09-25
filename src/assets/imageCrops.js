@@ -2,7 +2,7 @@
 // handoff README's image map / .image-slots.state.json. Applied via
 // CroppedImage as transform: scale(s) translate(x%, y%) on a cover-fit img.
 export const imageCrops = {
-  "body-scan-image": { scale: 1.5735319865127966, panX: 13.72721537851659, panY: -24.53082693827437 },
+  "body-scan-image": { scale: 1.0, panX: 0.0, panY: 0.0 },
   "deep-sleep-image": { scale: 1.0, panX: 0.0, panY: 3.2 },
   "plan-coach-avatar": { scale: 1.0, panX: 0.0, panY: 0.0 },
   "chat-coach-avatar": { scale: 1.0, panX: 0.0, panY: 0.0 },
